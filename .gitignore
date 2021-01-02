@@ -1,0 +1,5 @@
+# Project exclude paths
+/moduleCatalog/target/
+/moduleService/target/
+/moduleUser/target/
+/target/
