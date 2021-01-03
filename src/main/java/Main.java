@@ -1,3 +1,5 @@
+import sun.plugin2.message.Message;
+
 import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.GregorianCalendar;
 
@@ -29,6 +31,17 @@ public class Main {
 
         HelpStore.showArray(User.getStore());
 
+        UserImpl user1 =(UserImpl) HelpStore.findByName(User.getStore(), "Носов Иван");
+        UserImpl user2 =(UserImpl) HelpStore.findByName(User.getStore(), "Белякова Ольга");
+
+        /*MessageImlp m =  new MessageMy(user1, user2, "Привет!");
+        System.out.println(m.getName());*/
+
+        new MessageMy(user1, user2, "Привет!").save();
+        new MessageMy(user2, user1, "Привет!").save();
+        new MessageMy(user1, user2, "Как дела?").save();
+        new MessageMy(user2, user1, "Отлично! А у тебя").save();
+        HelpStore.showArray(MessageMy.getStore());
 
     }
 }

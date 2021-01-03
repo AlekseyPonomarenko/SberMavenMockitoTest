@@ -12,6 +12,7 @@
         <module>moduleService</module>
         <module>moduleCatalog</module>
         <module>moduleUser</module>
+        <module>moduleMessage</module>
     </modules>
     <dependencies>
         <dependency>
@@ -23,6 +24,12 @@
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>moduleUser</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>moduleMessage</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
