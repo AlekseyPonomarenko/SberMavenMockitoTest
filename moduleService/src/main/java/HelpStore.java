@@ -7,12 +7,12 @@ public class HelpStore {
         //Поиск по наименованию, если есть, то не будем добавлять
         if (e.getMethodFind()==MethodFind.Name){
             if (findByName(arrayList, e.getName()) != null){
-                return;
+                throw new IllegalArgumentException(e.getName() + " Повторяется");
             }
         }
         else {
             if (findById(arrayList, e.getID()) != null){
-                return;
+                throw new IllegalArgumentException(e.getID() + " Повторяется");
             }
         }
         arrayList.add(e);

@@ -9,7 +9,7 @@ public class Main {
         CountryImpl countryRussia =  new Country("Россия");
         countryRussia.save();
 
-        new Country("Россия").save();
+      //  new Country("Россия").save();
         new Country("Австралия").save();
         new Country("Италия").save();
         new Country("Канада").save();
