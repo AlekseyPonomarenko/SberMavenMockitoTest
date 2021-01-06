@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public interface MyObjectImpl {
 
     public String getName();
